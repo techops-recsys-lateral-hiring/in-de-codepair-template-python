@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+astroid = "==2.4.2"
+attrs = "==20.2.0"
+importlib-metadata = "==2.0.0"
+iniconfig = "==1.0.1"
+isort = "==5.5.4"
+lazy-object-proxy = "==1.4.3"
+mccabe = "==0.6.1"
+pluggy = "==0.13.1"
+py4j = "==0.10.9"
+py = "==1.9.0"
+pylint = "==2.6.0"
+pyparsing = "==2.4.7"
+pyspark = "==3.0.1"
+pytest = "==6.1.1"
+six = "==1.15.0"
+toml = "==0.10.1"
+typed-ast = "==1.4.1"
+wrapt = "==1.12.1"
+zipp = "==3.3.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+pylint = "*"
+pytest = "*"
+
+
+[scripts]
+unit-test = "pytest -k unit"
+integration-test = "pytest -k integration"
