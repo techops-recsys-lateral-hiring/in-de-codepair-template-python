@@ -1,5 +1,9 @@
 # PYTHON TEST EXAMPLE
 
+##Assumptions
+- Pip (22.0.4)
+- Python 3.9
+
 ## Run the following commands on your terminal in the project directory
 
 
@@ -16,10 +20,20 @@ pipenv install
 ## Run the unit tests
 pipenv run unit-test
 
-One of the test should will not run as it is marked skip,    remove the @pytest.mark.skip try to fix it and run it again to pass all the test cases
+you should see an output like this: 1 failed, 1 passed, 1 skipped
+
+One of the test will not run as it is marked skip, follow instructions over test to 
+remove the @pytest.mark.skip try to fix it and run it again to pass the test case
+
+One of the test should be failing , Correc the Assertion logic to pass the test case.
+
+Run the pipenv run unit-test again after the fixes and now run the unit tests again.
+
+Now All the 3 test cases should be passing
 
 ## Run the spark-submit job
 pipenv run spark-submit --master local sum.py
+
 Check sum=20 in the output
 
 ## PyCharm
